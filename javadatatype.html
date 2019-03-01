@@ -1,0 +1,107 @@
+<html>
+<title>Codebook</title>
+<head>
+	<style>
+	body
+{
+	background-repeat: repeat-x;
+	background-size: cover;
+}
+dd{
+	text-align: justify;
+}
+	</style>
+</head>
+<body background="image.jpg">
+	<dd>Variables are nothing but reserved memory locations to store values.This means that when you create a variable you reserve some space in memory.
+		Based on the data type of a variable, the operating system allocates memory and decides what can be stored in the reserved memory.Therefore, by assigning different data types to variables, you can store integers,decimals,or characters in these variables.</dd>
+		<h4><b><dt>There are two data types available in Java:</h4></b>
+		<dd>
+		<ul>
+			<li type="disc">Primitive Data Types
+			<li type="disc">Reference/Object Data Types
+		</ul></dd>
+		<dt><h4><b>Primitive DataType:</h4></b></dt>
+		<dd>There are eight primitive data types supported by Java.Primitive data types are predefined by the language and named by a keyword.Let us now look into detail about the eight primitive data types.</dd>
+		<ol type="1">
+			<li><dt><h4><b>byte:</h4></b></dt>
+				<ul>
+					<li type="disc">Byte data type is an 8-bit signed two's complement integer.
+					<li type="disc">Minimum value is -128 (-2^7)
+					<li type="disc">Maximum value is 127 (inclusive)(2^7 -1)
+					<li type="disc">Default value is 0
+					<li type="disc">Byte data type is used to save space in large arrays, mainly in place of integers, since a byte is four times smaller than an int.
+					<li type="disc">Example: <var>byte a = 100</var> ,<var>byte b = -50</var>
+				</ul>
+				<li><dt><h4><b>short:</h4></b></dt>
+					<ul>
+						<li type="disc">Short data type is a 16-bit signed two's complement integer.
+						<li type="disc">Minimum value is -32,768 (-2^15)
+						<li type="disc">Maximum value is 32,767 (inclusive) (2^15 -1)
+						<li type="disc">Short data type can also be used to save memory as byte data type. A short is 2 times smaller than an int
+						<li type="disc">Default value is 0.
+						<li type="disc">Example: <var>short s = 10000</var>, <var>short r = -20000</var>
+					</ul>
+				<li><dt><h4><b>int:</dt></b></h4>
+					<ul>
+						<li type="disc">Int data type is a 32-bit signed two's complement integer.
+						<li type="disc">Minimum value is - 2,147,483,648.(-2^31)
+						<li type="disc">Maximum value is 2,147,483,647(inclusive).(2^31 -1)
+						<li type="disc">Int is generally used as the default data type for integral values unless there is a concern about memory.
+						<li type="disc">The default value is 0.
+						<li type="disc">Example: <var>int a = 100000</var>, <var>int b = -200000</var>
+					</ul>
+				<li><dt><h4><b>long:</dt></b></h4>
+					<ul>
+						<li type="disc">Long data type is a 64-bit signed two's complement integer.
+						<li type="disc">Minimum value is -9,223,372,036,854,775,808.(-2^63)
+						<li type="disc">Maximum value is 9,223,372,036,854,775,807 (inclusive). (2^63 -1)
+						<li type="disc">This type is used when a wider range than int is needed.
+						<li type="disc">Default value is 0L.
+						<li type="disc">Example: <var>long a = 100000L</var>, <var>long b = -200000L</var>
+					</ul>
+					<li><dt><h4><b>float:</dt></b></h4>
+						<ul>
+							<li type="disc">Float data type is a single-precision 32-bit IEEE 754 floating point.
+							<li type="disc">Float is mainly used to save memory in large arrays of floating point numbers.
+							<li type="disc">Default value is 0.0f.
+							<li type="disc">Float data type is never used for precise values such as currency.
+							<li type="disc">Example: <var>float f1 = 234.5f</var>
+						</ul>
+					<li><dt><h4><b>double:</dt></b></h4>
+						<ul>
+							<li type="disc">double data type is a double-precision 64-bit IEEE 754 floating point.
+							<li type="disc">This data type is generally used as the default data type for decimal values, generally the default choice.
+							<li type="disc">Double data type should never be used for precise values such as currency.
+							<li type="disc">Default value is 0.0d.
+							<li type="disc">Example: <var>double d1 = 123.4</var>
+						</ul>
+					<li><dt><h4><b>boolean:</dt></b></h4>
+						<ul>
+							<li type="disc">boolean data type represents one bit of information.
+							<li type="disc">There are only two possible values: true and false.
+							<li type="disc">This data type is used for simple flags that track true/false conditions.
+							<li type="disc">Default value is false.
+							<li type="disc">Example: <var>boolean one = true</var>
+						</ul>
+					<li><dt><h4><b>char:</dt></b></h4>
+						<ul>
+							<li type="disc">char data type is a single 16-bit Unicode character.
+							<li type="disc">Minimum value is '\u0000' (or 0).
+							<li type="disc">Maximum value is '\uffff' (or 65,535 inclusive).
+							<li type="disc">Char data type is used to store any character.
+							<li type="disc">Example: <var>char letterA ='A'</var>
+						</ul>
+					<li><dt><h4><b>Reference DataType:</dt></b></h4>
+						<ul>
+							<li type="disc">Reference variables are created using defined constructors of the classes.They are used to access objects.These variables are declared to be of a specific type that cannot be changed. For example, Employee, Puppy etc.
+							<li type="disc">Class objects, and various type of array variables come under reference data type.
+							<li type="disc">Default value of any reference variable is null.
+							<li type="disc">A reference variable can be used to refer to any object of the declared type or any compatible type.
+							<li type="disc">Example: <var>Animal animal = new Animal("giraffe");</var>
+						</ul>
+		</ol>
+	</body>
+	</html>
+
+

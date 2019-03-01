@@ -1,0 +1,70 @@
+<html>
+<title>Codebook</title>
+<head>
+<style>
+
+body
+{
+	background-repeat: repeat-x;
+	background-size: cover;
+}
+dd{
+	text-align: justify;
+}
+div {
+    width: 300px;
+    height: 35px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 10px 10px 5px grey;
+}
+.button {
+    background-color: lime;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body background="image.jpg">
+	<dd>Strings, which are widely used in Java programming, are a sequence of characters. In the Java programming language, strings are objects.
+		The Java platform provides the String class to create and manipulate strings.Java String provides a lot of concepts that can be performed on a string such as compare, concat, equals, split, length, replace, compareTo, intern, substring etc.In java, string is basically an object that represents sequence of char values.An array of characters works same as java string.</dd>
+		<h4><b><dd>Example:</h4></b></dd>
+		<dd><div><code>char[] ch={'j','a','v','a'};<br>  
+String s=new String(ch);</code></div></dd><br><br>
+<dd>The java.lang.String class implements Serializable, Comparable and CharSequence interfaces.The java String is immutable i.e. it cannot be changed but a new instance is created. For mutable class, you can use StringBuffer and StringBuilder class.</dd>
+<h3><dt><b>What is String in java</b></h3></dt>
+<dd>Generally, string is a sequence of characters. But in java, string is an object that represents a sequence of characters. String class is used to create string object.There are two ways to create String object:
+	<ul>
+		<li type="disc">By string literal
+		<li type="disc">By new keyword
+	</ul></dd>
+	<h3><dt><b><ul><li tye="disc">String Literal<ul></h3></b></dt>
+	<dd>Java String literal is created by using double quotes.</dd> 
+	<h4><dt><b>Example:</dt></h3></b>
+		<dd><div>String s="welcome";</div></dd><br><br>
+		<dd>Each time you create a string literal, the JVM checks the string constant pool first. If the string already exists in the pool, a reference to the pooled instance is returned. If string doesn't exist in the pool, a new string instance is created and placed in the pool.</dd> 
+		<h4><b><dt>Example:</h4></b></dt>
+		<dd><div><code>String s1="Welcome";<br>  
+String s2="Welcome";<font color="green">//will not create new instance</font></code></div><br><br>
+<dd><img src="E:\WPI Project\string.jpg" width="300" height="300" border="2"></dd><br>
+<dd>In the above example only one object will be created. Firstly JVM will not find any string object with the value "Welcome" in string constant pool, so it will create a new object. After that it will find the string with the value "Welcome" in the pool, it will not create new object but will return the reference to the same instance.<b>Note: String objects are stored in a special memory area known as string constant pool.</b></dd>
+<h4><dt><b>Why java uses concept of string literal?</h4></dt></b>
+<dd>To make Java more memory efficient (because no new objects are created if it exists already in string constant pool).</dd>
+<dt><h3><b><ul><li type="disc">By new keyword</ul></b></h3></dt>
+<dd><div><code>String s=new String("Welcome");<font color="green">//creates two objects and one reference variable</font></code></div></dd><br>
+	<dd>In such case, JVM will create a new string object in normal(non pool) heap memory and the literal "Welcome" will be placed in the string constant pool.The variable s will refer to the object in heap(non pool).</dd>
+	<h4><b><dd><a href="java_string.html" class="button">Example</b></h4></dt></a>
+	</body>
+</html>
+
+
+
+
+	

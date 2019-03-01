@@ -1,0 +1,43 @@
+<html>
+<title>Codebook.com</title>
+<head>
+<style>
+#shadow {
+    color: black;
+    text-shadow: 2px 2px 4px #000000;
+}
+body
+{
+	background-repeat: repeat-x;
+	background-size: cover;
+}
+dd{
+	text-align: justify;
+}
+
+</style>
+</head>
+<body background="image.jpg">
+	<h3><b><dt>Internal Details of java Program</h3></b><dt>
+	<dt><h4><b>What happens at complie time?</h4></dt></b>
+	<dd>At compile time, java file is compiled by Java Compiler (It does not interact with OS) and converts the java code into bytecode.</dd><br>
+	<dd><img src="E:\WPI Project\javacodecompile.png" width="600" height="150" align="center" border="3"><br>
+		<dt><b><h4>How to set Path</dt></h4></b>
+		<dd>The path is required to be set for using tools such as javac, java etc.If you are saving the java source file inside the jdk/bin directory, path is not required to be set because all the tools will be available in the current directory.But If you are having your java file outside the jdk/bin folder, it is necessary to set path of JDK.
+		There are 2 ways to set java path:
+			<ol>
+			<li>Temporary
+			<li>permanent
+			</ol>
+		<dt><h4><b>Setting Temporary Path</h4></dt></b>
+		<dd>
+			<ol type="i">
+				<li>Open command prompt
+				<li>copy the path of jdk/bin directory
+				<li>write in command prompt: set path=copied_path
+			</ol>
+			<dd id="shadow">set path=C:\Program Files\Java\jdk1.6.0_23\bin</dd>
+		<dt><h4><b>Setting Permanant Path</h4></b></dt>
+		<dd>Go to MyComputer properties &gt advanced tab &gt environment variables &gt new tab of user variable &gt write path in variable name &gt write path of bin folder in variable value &gt ok &gt ok &gt ok</dd>
+</body>
+</html>

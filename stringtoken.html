@@ -1,0 +1,83 @@
+<html>
+<title>Codebook</title>
+<head>
+<style>
+body
+{
+	background-repeat: repeat-x;
+	background-size: cover;
+}
+dd{
+	text-align: justify;
+}
+ td, th {    
+    
+    text-align: justify;
+    padding: 15px;
+    border-collapse: collapse;
+}
+tr:nth-child(even){
+	background-color: #f2f2f2
+}
+
+table {
+    border-collapse: collapse;
+    
+}
+
+</style>
+</head>
+<body background="image.jpg">
+<dt><b><h3>StringTokenizer</h3></dt></b>
+<dd>The java.util.StringTokenizer class allows you to break a string into tokens.It is simple way to break string.
+It doesn't provide the facility to differentiate numbers, quoted strings, identifiers etc. like StreamTokenizer class.We will discuss about the StreamTokenizer class in I/O chapter.</dd>
+<h4><b><dt>Constructors of StringTokenizer class</dt></b></h4>
+<dd>There are 3 constructors defined in the StringTokenizer class.
+	<table border="2">
+		<tr>
+			<th>Constructor</th>	
+			<th>Description</th>
+		<tr>
+			<td>StringTokenizer(String str)</td>	
+			<td>creates StringTokenizer with specified string.</td>
+		</tr>
+		<tr>
+			<td>StringTokenizer(String str, String delim)</td>	
+			<td>creates StringTokenizer with specified string and delimeter.</td>
+		</tr>
+		<tr>
+			<td>StringTokenizer(String str, String delim, boolean returnValue)</td>
+			<td>creates StringTokenizer with specified string, delimeter and returnValue.<br>If return value is true, delimiter characters are considered to be tokens.<br>If it is false, delimiter characters serve to separate tokens.</td>
+		</tr>
+	</table></dd>
+	<h4><b><dt>Methods of StringTokenizer class</dt></h4></b>
+<dd>The 6 useful methods of StringTokenizer class are as follows:
+	<table border="2">
+		<tr>
+			<th>Public method</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>boolean hasMoreTokens()</td>	
+			<td>checks if there is more tokens available.</td>
+		</tr>
+		<tr>
+			<td>String nextToken()</td>
+			<td>returns the next token from the StringTokenizer object.</td>
+		</tr>
+		<tr>
+			<td>String nextToken(String delim)</td>
+			<td>returns the next token based on the delimeter.</td>
+		</tr>
+		<tr>
+			<td>boolean hasMoreElements()</td>
+			<td>same as hasMoreTokens() method.</td>
+		</tr>
+		<tr>
+			<td>Object nextElement()</td>
+			<td>same as nextToken() but its return type is Object.</td>
+		</tr>
+		<tr>
+			<td>int countTokens()</td>
+			<td>returns the total number of tokens.</td>
+		</table>	

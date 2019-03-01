@@ -1,0 +1,75 @@
+<html>
+<title>Codebook</title>
+<head>
+<style>
+
+body
+{
+	background-repeat: repeat-x;
+	background-size: cover;
+}
+dd{
+	text-align: justify;
+}
+
+.button {
+    background-color: lime;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+div{
+    width: 200px;
+    height: 45px;
+    box-shadow: 10px 10px 5px grey;
+    background-color: white;
+    text-align: justify;
+
+}
+
+</style>
+</head>
+<body background="image.jpg">
+    <h3><dt><b>Immutable String in Java</h3></b></dt>
+    <dd>In java, string objects are immutable. Immutable simply means unmodifiable or unchangeable.Once string object is created its data or state can't be changed but a new string object is created.Let's try to understand the immutability concept by the example given below:<br>
+    <code><pre>
+        class Testimmutablestring
+        {  
+            public static void main(String args[])
+            {
+                String s="Sachin";
+                s.concat(" Tendulkar");<font color="green">//concat() method appends the string at the end</font>
+                System.out.println(s);<font color="green">//will print Sachin because strings are immutable objects</font>
+            }
+        }
+        
+        <div>Output:Sachin<div>
+            </code></pre></dd><br>
+<dd>Now it can be understood by the diagram given below. Here Sachin is not changed but a new object is created with sachintendulkar.That is why string is known as immutable.</dd><br>
+<dd><center><img src="E:\WPI Project\string2.jpg" width="400" height="300" border="2"></center><br>
+As you can see in the above figure that two objects are created but s reference variable still refers to "Sachin" not to "Sachin Tendulkar".
+But if we explicitely assign it to the reference variable, it will refer to "Sachin Tendulkar" object.</dd> 
+<dt><h4><b>Example:</dt></h4></b>
+    <dd><code><pre>
+    class Testimmutablestring1
+    {
+        public static void main(String args[])
+        {
+            String s="Sachin";
+            s=s.concat(" Tendulkar");
+            System.out.println(s);
+        }  
+    }
+    <div>Output:Sachin Tendulkar</div>
+    </code></pre></dd>
+    <dd>In such case, s points to the "Sachin Tendulkar".Please notice that still sachin object is not modified.</dd>
+    <dt><h3><b>Why string objects are immutable in java?</h3></dt></b>
+    <dd>Because java uses the concept of string literal.Suppose there are 5 reference variables,all referes to one object "sachin".If one reference variable changes the value of the object, it will be affected to all the reference variables. That is why string objects are immutable in java.</dd>  
+</body>
+</html>

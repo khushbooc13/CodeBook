@@ -1,0 +1,99 @@
+.top {
+  position:relative;
+  background-color:#ffffff;
+  height:68px;
+  padding-top:20px;
+  line-height:50px;
+  overflow:hidden;
+  z-index:1;
+}
+.topnav {
+  position:relative;
+  z-index:1;
+  font-size: 17px;
+  background-color:#5f5f5f;
+  color:#f1f1f1;
+  width:100%;
+  padding:0;
+  letter-spacing:1px;
+}
+.topnav a{
+  text-decoration:none;
+  padding:10px 15px 9px 15px !important;
+  border-bottom:none;
+  display:inline-block;
+}
+.topnav a:hover{
+  border-bottom:none;
+  background-color:#000000;
+  color:#ffffff;
+}
+.topnav a.active {
+  background-color:#73AD21;
+  color:#ffffff;
+}
+a.topnav-icons {
+  width:52px;
+  font-size:20px !important;
+  padding-top:11px !important;
+  padding-bottom:13px !important;
+}
+a.topnav-icons.fa-home {
+  font-size:22px !important;
+}
+a.topnav-localicons {
+  font-size:20px !important;
+  padding-top:6px !important;
+  padding-bottom:12px !important;
+}
+#leftmenu h2 {
+  font-size:21px;
+  padding-left:16px;
+  margin:-4px 0 4px 0;
+}
+#leftmenu a {
+  display:block;
+  text-decoration:none;
+  padding:2px 1px 1px 16px;
+  font-size:15px;
+}
+#leftmenu a:hover {
+  background-color:#dddddd;
+  color:#000000;
+}
+#leftmenu a.active {
+  background-color:#dddddd;
+  color:#000000;
+  background-color:#cccccc;
+  color:#000000;
+  background-color:#73AD21;
+  color:#ffffff;  
+}
+#leftmenu {
+  width:220px;
+  z-index:9;
+}
+#leftmenuinner {
+  position:fixed;
+  top:0;
+  padding-top:112px;
+  padding-bottom:0;    
+  height:100%;
+  width:16.66666%;
+  width:220px;
+  background-color:transparent;
+}
+#leftmenuinnerinner {
+  height:100%;
+  width:100%;
+  overflow-y:hidden;
+  padding-top:20px;
+}
+#leftmenuinnerinner:hover {
+    overflow-y:scroll;
+}
+#leftmenu .w3-closebtn {
+  position:absolute;
+  right:16px;
+  top:0;
+}

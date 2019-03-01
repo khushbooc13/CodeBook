@@ -1,0 +1,98 @@
+<html>
+<title>Codebook</title>
+<head>
+	<style>
+	body
+{
+	background-repeat: repeat-x;
+	background-size: cover;
+}
+
+#Output {
+    width: 150px;
+    height: 30px;
+    padding: 15px;
+    background-color: white;
+    
+	color: black;
+   
+
+}
+#rcorners2 {
+	width: 150px;
+    height: 30px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px; 
+    width: 200px;
+    height: 10px;    
+}
+#compile1{
+	width: 250px;
+    height: 40px;
+    padding: 15px;
+    background-color: white;
+    
+	color: black;
+    
+}
+dd{
+	text-align: justify;
+}
+	</style>
+</head>
+<?php hyperlight($code, 'java'); ?>
+<body background="image.jpg">
+	<h3><b>Basic Rules & Syntax</h3></b>
+	<dl>
+		<ul>
+			<li type="disc"><h4><b>Case Sensitivity</h4></b> - Java is case sensitive, which means identifier <b>Hello</b> and <b>hello</b> would have different meaning in Java.
+			<li type="disc"><h4><b>Class Names</h4></b> - For all class names the first letter should be in Upper Case.If several words are used to form a name of the class, each inner word's first letter should be in Upper Case.
+				<h4><b><dt>Example:</h4></b></dt> 
+				<dd><div id="rcorners2"><i>class MyFirstJavaClass</i></div></dd>
+			<li type="disc"><h4><b>Method Names</h4></b> - All method names should start with a Lower Case letter.If several words are used to form the name of the method, then each inner word's first letter should be in Upper Case.
+			<h4><b><dt>Example:</h4></b><dd><div id="rcorners2"><i>public void myMethodName()</i></div></dd>
+			<li type="disc"><h4><b>Program File Name</h4></b> - Name of the program file should exactly match the class name.<br>
+				-When saving the file, you should save it using the class name (Remember Java is case sensitive) and append '.java' to the end of the name (if the file name and the class name do not match your program will not compile).
+				<h4><b><dt>Example:</h4></b></dt> <dd>Assume 'MyFirstJavaProgram' is the class name.Then the file should be saved as '<i>MyFirstJavaProgram.java</i>'</dd>
+			<li type="disc"><h4><b>public static void main(String args[])</h4></b> - Java program processing starts from the main() method which is a mandatory part of every Java program.
+			</ul>
+			<h4></b>Example</h4></b>
+	<code><pre>
+class MyFirstJavaProgram
+{ 
+	public static void main(String []args)
+	{
+		System.out.println("Hello World"); // prints Hello World
+	}
+}
+    <div id="output">Output:
+	Hello World
+</code></pre>
+<h4><b>Let's look at how to save the file,compile and run the program.Please follow the steps given below:</b></h4>
+<ul>
+	<li type="disc">Open notepad and add the code as above.
+	<li type="disc">Save the file as: MyFirstJavaProgram.java.
+	<li type="disc">Open a command prompt window and go to the directory where you saved the class. Assume it's C:\.
+	<li type="disc">Type 'javac MyFirstJavaProgram.java' and press enter to compile your code. If there are no errors in your code, the command prompt will take you to the next line(Assumption:The path variable is set).
+	<li type="disc">Now, type ' java MyFirstJavaProgram ' to run your program.
+	<li type="disc">You will be able to see ' Hello World ' printed on the window.
+</ul>
+<div id="compile1">C:\> javac MyFirstJavaProgram.java<br>
+C:\> java MyFirstJavaProgram<br> 
+Hello World</div>
+			<h4><b><dt>Java Identifiers</h4></b>
+			<ul>
+				<li type="disc">All identifiers should begin with a letter (A to Z or a to z), currency character ($) or an underscore (_).
+				<li type="disc">After the first character identifiers can have any combination of characters.
+				<li type="disc">A key word cannot be used as an identifier.
+				<li type="disc">Most importantly identifiers are case sensitive.
+					<h4><b>Examples of legal identifiers:</h4></b> <div id="rcorners2"><i>age, $salary,1_value</i></div>
+					<h4><b>Examples of illegal identifiers:</h4></b><div id="rcorners2"> <i>123abc, -salary</i></div>
+			</ul>
+
+
+	

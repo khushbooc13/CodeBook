@@ -1,0 +1,148 @@
+<html>
+<title>Codebook.com
+</title>
+<head>
+	<style>
+body
+{
+	background-repeat: repeat-x;
+	background-size: cover;
+}
+#shadow {
+    color: aqua;
+   
+}
+#shadow1 {
+    color: black;
+    
+}
+div {
+    width: 220px;
+    height: 35px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 10px 10px 5px grey;
+}
+dd{
+	text-align: justify;
+}
+
+	</style>
+</head>
+<body background="image.jpg">
+	<h3><b><dt>Variables</h3></b></dt>
+	<dl>Variable is name of reserved area allocated in memory.</dd><br><br>
+		<div id="shadow1">int data=50;//Here data is variable </div>
+		<dt><h4><b>Tpes of Variable</h4></b>
+			<dd>There are 3 types of variables:
+			<ul>
+				<li type="disc">Local Varaible</li>
+				<li type="disc">Instance Varaible</li>
+				<li type="disc">Class Varaible/ Static Variable</li>
+			</ul>
+			<dl>
+			<ul>
+				<li type="disc"><h4><b><dt>Local Varaible</h4></b></li>
+				<dd>Local variables are declared in methods, constructors, or blocks.Local variables are created when the method, constructor or block is entered and the variable will be destroyed once it exits the method, constructor or block.
+				Access modifiers cannot be used for local variables.
+				Local variables are visible only within the declared method, constructor or block.Local variables are implemented at stack level internally.There is no default value for local variables so local variables should be declared and an initial value should be assigned before the first use.</dd>
+				<h3><dt><b>Example:</dt></h3></b>
+	<code><pre>
+	class Test
+	{ 
+   		public void pupAge()
+   		{
+      		int age = 0;
+      		age = age + 7;
+      		System.out.println("Puppy age is : " + age);
+   		}
+   
+   		public static void main(String args[])
+   		{
+      		Test test = new Test();
+      		test.pupAge();
+   		}
+	}
+	<div id="shadow1">Output: Puppy age is: 7
+</code></pre>
+<hr color="black">
+				<li type="disc"><h4><b><dt>Instance Varaible</h4></b></li>
+				<dd>
+					<ul>
+						<li type="disc">Instance variables are declared in a class, but outside a method, constructor or any block.
+						<li type="disc">When a space is allocated for an object in the heap, a slot for each instance variable value is created.
+						<li type="disc">Instance variables are created when an object is created with the use of the keyword 'new' and destroyed when the object is destroyed.
+						<li type="disc">Instance variables hold values that must be referenced by more than one method, constructor or block, or essential parts of an object's state that must be present throughout the class.
+						<li type="disc">Instance variables can be declared in class level before or after use.
+						<li type="disc">Access modifiers can be given for instance variables.
+						<li type="disc">The instance variables are visible for all methods, constructors and block in the class. Normally, it is recommended to make these variables private (access level). However visibility for subclasses can be given for these variables with the use of access modifiers.
+						<li type="disc">Instance variables have default values. For numbers the default value is 0, for Booleans it is false and for object references it is null. Values can be assigned during the declaration or within the constructor.
+						<li type="disc">Instance variables can be accessed directly by calling the variable name inside the class. However within static methods and different class (when instance variables are given accessibility) should be called using the fully qualified name . ObjectReference.VariableName.</dd>
+					</ul>
+					<h3><dt><b>Example:</dt></h3></b>
+	<code><pre>
+	import java.io.*;
+	class Employee
+	{
+		public String name;		// this instance variable is visible for any child class.
+		private double salary;	// salary variable is visible in Employee class only.
+		public Employee (String empName)	// The name variable is assigned in the constructor.
+		{
+      		name = empName;
+   		}
+   		public void setSalary(double empSal)	// The salary variable is assigned a value.
+   		{
+      		salary = empSal;
+   		}
+   		public void printEmp()
+   		{
+   			System.out.println("name  : " + name );
+      		System.out.println("salary :" + salary);
+   		}
+   		public static void main(String args[])
+   		{
+      		Employee empOne = new Employee("Ransika");
+      		empOne.setSalary(1000);
+      		empOne.printEmp();
+   		}
+	}
+
+	<div id="shadow1">Output:
+	name  : Ransika
+	salary :1000.0
+</code></pre>
+				<li type="disc"><h4><b><dt>Class Varaible / Static Variable</h4></b></li>
+				<dd>
+					<ul>
+						<li type="disc">Class variables also known as static variables are declared with the static keyword in a class, but outside a method, constructor or a block.
+						<li type="disc">There would only be one copy of each class variable per class, regardless of how many objects are created from it.
+						<li type="disc">Static variables are rarely used other than being declared as constants. Constants are variables that are declared as public/private, final and static. Constant variables never change from their initial value.
+						<li type="disc">Static variables are stored in static memory. It is rare to use static variables other than declared final and used as either public or private constants.
+						<li type="disc">Static variables are created when the program starts and destroyed when the program stops.
+						<li type="disc">Visibility is similar to instance variables. However, most static variables are declared public since they must be available for users of the class.
+						<li type="disc">Default values are same as instance variables. For numbers, the default value is 0; for Booleans, it is false; and for object references, it is null. Values can be assigned during the declaration or within the constructor. Additionally values can be assigned in special static initializer blocks.
+						<li type="disc">Static variables can be accessed by calling with the class name ClassName.VariableName.
+						<li type="disc">When declaring class variables as public static final, then variables names (constants) are all in upper case. If the static variables are not public and final the naming syntax is the same as instance and local variables.</dd>
+					</ul>
+			</ul>
+		</dl>
+		<h3><dt><b>Example:</dt></h3></b>
+		<code><pre>
+	import java.io.*;
+	class Employee
+	{
+		private static double salary;	// salary variable is a private static variable
+		public static final String DEPARTMENT = "Development ";	// DEPARTMENT is a constant
+		public static void main(String args[])
+		{
+      		salary = 1000;
+      		System.out.println(DEPARTMENT + "average salary:" + salary);
+   		}
+	}
+	<div id="shadow1">Output:
+Development average salary:1000
+		</pre>
+	</code>
+
+</body>
+</html>
